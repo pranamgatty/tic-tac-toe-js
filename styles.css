@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+  width: min(100%, 420px);
+  padding: 24px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 2.2rem;
+  color: #3cf118;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#status {
+  font-size: 1rem;
+  color: #cd0a0a;
+}
+
+button {
+  font-family: inherit;
+}
+
+#resetButton {
+  padding: 10px 18px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#resetButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cell {
+  
+  height: 150px;
+  min-height: 100px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cell.x {
+  color: #ff4c4c;
+}
+
+.cell.o {
+  color: #6bd96b;
+}
+
+.options {
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
